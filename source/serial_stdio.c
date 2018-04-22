@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
-
+// que pedo? :V
 void serial_printf(void (*p_puts)(const char *), const char * format, ...){
     char * tempBuffer;
     int bufferSize;
