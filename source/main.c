@@ -6,8 +6,7 @@
 
 void buttonCallback(int state);
 
-int main(){
-    int a; //useless var
+int main(){   
     uart2_init(9600);
     led_init();
     button_init();
@@ -15,7 +14,6 @@ int main(){
     while(1){
         delay_ms(1000);
         serial_printf(uart2_puts, "hello, world\n");
-        a++;
     }
 }
 

@@ -1,9 +1,8 @@
 #include "led.h"
-
 #include "stm32f3xx_ll_bus.h"
 #include "stm32f3xx_ll_gpio.h"
 #include "stm32f3xx_ll_tim.h"
-// hello bitch
+
 void led_init(void){
   LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOB);
   LL_GPIO_InitTypeDef gpio;
